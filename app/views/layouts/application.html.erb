@@ -20,7 +20,7 @@
       <nav class="side_nav">
         <% if @cart %>
           <div id="cart" class="carts">
-            <%= render @cart %>
+            <%= render_if @cart && @cart.line_items.any?, @cart %>
           </div>
         <% end %>
         <ul>
