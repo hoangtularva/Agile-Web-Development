@@ -9,6 +9,20 @@ Rails.application.configure do
   #Action cable
   config.action_cable.disable_request_forgery_protection = true
 
+  #Mailer:
+  
+    config.action_mailer.delivery_method = :smtp
+
+    config.action_mailer.smtp_settings = {
+      address: "smtp.gmail.com",
+      port: 587,
+      domain: "domain.of.sender.net",
+      authentication: "plain",
+      user_name: "hoangtukg295@gmail.com",
+      password: "password",
+      enable_starttls_auto: true
+    }
+  
   # Do not eager load code on boot.
   config.eager_load = false
 
