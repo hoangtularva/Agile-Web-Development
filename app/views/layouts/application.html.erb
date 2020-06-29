@@ -1,43 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Ruby on rails</title>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <title>ProjectRubyOnRailsWebMini</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-    <title>Pragprog Books Online Store</title>
+
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body class="<%= controller.controller_name %>">
-    <div id="banner">
-      <%= image_tag 'logo.png', alt: 'THT' %>
-      <span class="title"><%= @page_title || "Books Store" %></span>
-    </div>
-    <div id="columns">
-        <div id="side">
-          <div id="cart">
-            <% if @cart %>
-              <%= hidden_div_if(@cart.line_items.empty?, id: 'cart') do %>
-                <%= render @cart %>
-              <% end %>
-            <% end %>
-          </div>
-          
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/">Questions</a></li>
-            <li><a href="/">News</a></li>
-            <li><a href="/">Contact</a></li>
-            <li><a href="/carts">Manage Carts</a></li>
-            <li><a href="/products">Manage Products</a></li>
-          </ul>
-        </div>
-        <div id="main">
-          <%= yield %>
-        </div>
-    </div>
+  <body>
+    <%= yield %>
   </body>
 </html>

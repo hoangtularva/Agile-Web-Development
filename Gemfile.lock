@@ -82,12 +82,6 @@ GEM
       concurrent-ruby (~> 1.0)
     jbuilder (2.10.0)
       activesupport (>= 5.0.0)
-    jquery-rails (4.4.0)
-      rails-dom-testing (>= 1, < 3)
-      railties (>= 4.2.0)
-      thor (>= 0.14, < 2.0)
-    jquery-ui-rails (6.0.1)
-      railties (>= 3.2.16)
     listen (3.2.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -198,7 +192,7 @@ GEM
     websocket-extensions (0.1.5)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.3.0)
+    zeitwerk (2.3.1)
 
 PLATFORMS
   ruby
@@ -208,11 +202,9 @@ DEPENDENCIES
   byebug
   capybara (>= 2.15)
   jbuilder (~> 2.7)
-  jquery-rails
-  jquery-ui-rails
   listen (~> 3.2)
   puma (~> 4.1)
-  rails (~> 6.0.3, >= 6.0.3.1)
+  rails (~> 6.0.3, >= 6.0.3.2)
   sass-rails (>= 6)
   selenium-webdriver
   spring
