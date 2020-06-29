@@ -11,8 +11,9 @@
 
   <body>
     <header class="main">
-        <%= image_tag 'logo.png', alt: 'logo' %>
-        <h1><%= @page_title || "Books Store" %></h1>
+        <h1>
+          <%= image_tag 'logo.png', alt: 'logo' %> <%= @page_title || "Books Store" %>
+        </h1>
     </header>
 
     <section class="content">

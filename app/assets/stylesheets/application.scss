@@ -18,18 +18,19 @@ body {
     padding: 0;
 }
 header.main {
-    text-align: center; // center on mobile
+    
     padding: 1px;
-    font: small-caps 10px/10px "Times New Roman", serif;
+    font: small-caps 20px "Times New Roman", serif;
+
     img {
-        width: 50px;
+        width: 40px;
     }   
-    @media (min-width: 30em) {
-        text-align: left; // left align on desktop
-    }
+  
     background: #282;
-    margin: 0;
-   
+    
+    h1 { 
+       text-align: center;
+    }
 }
 .content {
         margin: 0;
