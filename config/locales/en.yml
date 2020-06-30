@@ -75,6 +75,12 @@ en:
       select: "Select a payment method"
       submit: "Place Order"
 
+  errors:
+    template: 
+      body: "There were problems with the following fields:"
+      header:
+        one: "One error"
+        other: "%{count} error prohibited this order from being saved:"
 #model
   thanks: "Thank you for order"
 
