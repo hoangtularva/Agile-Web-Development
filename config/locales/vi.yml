@@ -1,0 +1,13 @@
+vi:
+  layouts:
+   application:
+    title: "Cua hang sach"
+    home: "Trang chu"
+    questions: "Hoi dap"
+    news: "Tin tuc"
+    contact: "Lien He"
+
+  store:
+   index:
+    title_html: "Gio hang cua ban"
+    add_html: "Them vao gio"

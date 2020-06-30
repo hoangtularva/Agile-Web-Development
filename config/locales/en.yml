@@ -29,5 +29,16 @@
 # To learn more, please read the Rails Internationalization guide
 # available at https://guides.rubyonrails.org/i18n.html.
 
-en:
-  hello: "Hello world"
+en:  
+  layouts:
+   application: 
+    title: "Books Store"
+    home: "Home"
+    questions: "Questions"
+    news: "News"
+    contact: "Contact"
+
+  store:
+   index:
+    title_html: "Your Pragmatic Catalog"
+    add_html: "Add to cart"

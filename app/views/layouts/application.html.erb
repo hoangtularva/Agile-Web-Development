@@ -12,7 +12,7 @@
   <body>
     <header class="main">
         <h1>
-          <%= image_tag 'logo.png', alt: 'logo' %> <%= @page_title || "Books Store" %>
+          <%= image_tag 'logo.png', alt: 'logo' %> <%= @page_title || t('.title') %>
         </h1>
     </header>
 
@@ -24,10 +24,10 @@
           </div>
         <% end %>
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/">Questions</a></li>
-          <li><a href="/">News</a></li>
-          <li><a href="/">Contact</a></li>
+          <li><a href="/"> <%= t('.home') %> </a></li>
+          <li><a href="/"> <%= t('.questions') %> </a></li>
+          <li><a href="/"> <%= t('.news') %> </a></li>
+          <li><a href="/"> <%= t('.contact') %> </a></li>
           <% if session[:user_id] == nil %>
             <li><%= link_to 'Login', login_path %></li>
           <% end %>
