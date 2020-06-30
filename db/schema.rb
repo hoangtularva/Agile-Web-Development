@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_30_084335) do
+ActiveRecord::Schema.define(version: 2020_06_30_092145) do
 
   create_table "action_mailbox_inbound_emails", force: :cascade do |t|
     t.integer "status", default: 0, null: false
@@ -77,6 +77,16 @@ ActiveRecord::Schema.define(version: 2020_06_30_084335) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "support_requests", force: :cascade do |t|
+    t.string "email"
+    t.string "subject"
+    t.text "body"
+    t.integer "order_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["order_id"], name: "index_support_requests_on_order_id"
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "name"
     t.string "password_digest"
@@ -88,4 +98,5 @@ ActiveRecord::Schema.define(version: 2020_06_30_084335) do
   add_foreign_key "line_items", "carts"
   add_foreign_key "line_items", "orders"
   add_foreign_key "line_items", "products"
+  add_foreign_key "support_requests", "orders"
 end
