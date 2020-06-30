@@ -32,3 +32,9 @@ local:
 #   service: Mirror
 #   primary: local
 #   mirrors: [ amazon, google, microsoft ]
+local:
+  service: Disk
+  root: <%= Rails.root.join("storage") %>
+test:
+  service: Disk
+  root: <%= Rails.root.join("tmp/storage") %>

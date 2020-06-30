@@ -22,7 +22,6 @@ Rails.application.configure do
       password: "password",
       enable_starttls_auto: true
     }
-  
   # Do not eager load code on boot.
   config.eager_load = false
 
@@ -76,4 +75,7 @@ Rails.application.configure do
   # Use an evented file watcher to asynchronously detect changes in source code,
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
+
+    #Setting Up Active Storage
+    config.active_storage.service = :local
 end
