@@ -37,8 +37,44 @@ en:
     questions: "Questions"
     news: "News"
     contact: "Contact"
+    login: "Login"
+    orders: "Orders"
+    products: "Products"
+    users: "Users"
+    logout: "Logout"
 
   store:
    index:
     title_html: "Your Pragmatic Catalog"
     add_html: "Add to cart"
+
+  carts:
+    cart:
+      title: "Your Cart"
+      empty: "Empty cart"
+      checkout: "Checkout"
+      total: "Total"
+
+# price
+  number:
+    currency:
+      format:
+        unit: "$"
+        precision: 2
+        separator: "."
+        delimiter: ","
+        format: "%u%n"
+
+  orders:
+    new:
+      legend: "Please Enter Your Details"
+    form:
+      name: "Name"
+      address_html: "Address"
+      pay_type: "Payment Type"
+      select: "Select a payment method"
+      submit: "Place Order"
+
+#model
+  thanks: "Thank you for order"
+

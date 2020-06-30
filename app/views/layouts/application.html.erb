@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Books Store</title>
+    <title><%t('.title')%></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+   
+    <%= javascript_pack_tag 'locale_switcher', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
     <header class="main">
+        <aside>
+          <%= form_tag store_index_path, class: 'locale' do %>
+            <%= select_tag 'set_locale', options_for_select(LANGUAGES, I18n.locale.to_s), onchange: 'this.form.submit()' %>
+            <%= submit_tag 'submit', id: "submit_locale_change" %>
+          <% end %>
+        </aside>
         <h1>
           <%= image_tag 'logo.png', alt: 'logo' %> <%= @page_title || t('.title') %>
         </h1>
@@ -29,17 +37,17 @@
           <li><a href="/"> <%= t('.news') %> </a></li>
           <li><a href="/"> <%= t('.contact') %> </a></li>
           <% if session[:user_id] == nil %>
-            <li><%= link_to 'Login', login_path %></li>
+            <li><%= link_to t('.login'), login_path %></li>
           <% end %>
         </ul>
         
       <% if session[:user_id] %>
         <nav class="logged_in_nav">
           <ul>
-            <li><%= link_to 'Orders', orders_path %></li>
-            <li><%= link_to 'Products', products_path %></li>
-            <li><%= link_to 'Users', users_path %></li>
-            <li><%= button_to 'Logout', logout_path, method: :delete, data: { confirm: 'Do you want to log out?' }%></li>
+            <li><%= link_to t('.orders'), orders_path %></li>
+            <li><%= link_to t('.products'), products_path %></li>
+            <li><%= link_to t('.users'), users_path %></li>
+            <li><%= button_to t('.logout'), logout_path, method: :delete, data: { confirm: 'Do you want to log out?' }%></li>
           </ul>
         </nav>
       <% end %>

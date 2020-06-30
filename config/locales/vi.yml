@@ -1,13 +1,67 @@
 vi:
   layouts:
    application:
-    title: "Cua hang sach"
-    home: "Trang chu"
-    questions: "Hoi dap"
-    news: "Tin tuc"
-    contact: "Lien He"
+    title: "Cửa hàng sách"
+    home: "Trang chủ"
+    questions: "Hỏi đáp"
+    news: "Tin tức"
+    contact: "Liên hệ"
+    login: "Đăng nhập"
+    orders: "Đơn hàng"
+    products: "Sản phẩm"
+    users: "Người dùng"
+    logout: "Đăng xuất"
 
   store:
    index:
-    title_html: "Gio hang cua ban"
-    add_html: "Them vao gio"
+    title_html: "Sản phẩm"
+    add_html: "Thêm vào giỏ hàng"
+
+  carts:
+    cart:
+      title: "Giỏ hàng của bạn"
+      empty: "Xóa giỏ hàng"
+      checkout: "Thanh toán"
+      total: "Tổng"
+# price
+  number:
+    currency:
+      format:
+        unit: "USD"
+        precision: 2
+        separator: ","
+        delimiter: "."
+        format: "%n&nbsp;%u"
+
+  orders:
+    new:
+      legend: "Vui lòng nhập chi tiết thông tin"
+    form:
+      name: "Họ tên"
+      address_html: "Địa chỉ"
+      pay_type: "Loại thanh toán"
+      select: "Chọn phương thức thanh toán"
+      submit: "Đặt hàng"
+
+  activerecord:
+    models:
+      order: "Đơn hàng"
+    attributes:
+      order:
+        name: "Họ tên"
+        address: "Địa chỉ"
+        email: "Email"
+        pay_type: "Phương thức thanh toán"
+    errors:
+      messages:
+        inclusion: "phải được chọn"
+        blank: "không được để trống"
+  errors:
+    template: 
+      body: "Lỗi xảy ra ở các ô sau:"
+      header:
+        one: "1 lỗi xảy ra"
+        other: "%{count} lỗi xảy ra"
+
+#model order
+  thanks: "Cảm ơn bạn đã đặt hàng"
