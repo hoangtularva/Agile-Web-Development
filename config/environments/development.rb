@@ -19,7 +19,7 @@ Rails.application.configure do
       domain: "domain.of.sender.net",
       authentication: "plain",
       user_name: "hoangtukg295@gmail.com",
-      password: "password",
+      password: "-Hoangtu295",
       enable_starttls_auto: true
     }
   # Do not eager load code on boot.
