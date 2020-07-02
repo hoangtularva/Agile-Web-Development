@@ -20,6 +20,7 @@ Rails.application.routes.draw do
     get :who_bought, on: :member
   end
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  resources :support_requests, only: [ :index, :update ]
   #Locale
   scope '(:locale)' do
     resources :orders
