@@ -26,7 +26,7 @@
     <%= form.email_field :email, size: 40 %>
   </div>
 
-  <div class="field">
+  <div id='pay-type-component' class="field">
     <%= form.label :pay_type, t('.pay_type') %>
     <%= form.select :pay_type, Order.pay_types.keys, prompt: t('.select') %>
   </div>
