@@ -1,5 +1,11 @@
-<h1>Order#received</h1>
+Dear <%= @order.name %>
+Thank you for your recent order from The Books Store
+You ordered the following items:
 
-<p>
-  <%= @greeting %>, find me in app/views/order_mailer/received.html.erb
-</p>
+<table>
+  <%= render @order.line_items -%>
+</table>
+
+We'll send you a separate email when your order ships.
+
+<%= @greeting %>
