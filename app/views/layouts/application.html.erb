@@ -35,7 +35,7 @@
           <li><a href="/"> <%= t('.home') %> </a></li>
           <li><a href="/"> <%= t('.questions') %> </a></li>
           <li><a href="/"> <%= t('.news') %> </a></li>
-          <li><a href="/"> <%= t('.contact') %> </a></li>
+          <li><a href="/rails/conductor/action_mailbox/inbound_emails/new"> <%= t('.contact') %> </a></li>
           <% if session[:user_id] == nil %>
             <li><%= link_to t('.login'), login_path %></li>
           <% end %>
@@ -47,6 +47,7 @@
             <li><%= link_to t('.orders'), orders_path %></li>
             <li><%= link_to t('.products'), products_path %></li>
             <li><%= link_to t('.users'), users_path %></li>
+            <li><%= link_to t('.support'), support_requests_path %></li>
             <li><%= button_to t('.logout'), logout_path, method: :delete, data: { confirm: 'Do you want to log out?' }%></li>
           </ul>
         </nav>

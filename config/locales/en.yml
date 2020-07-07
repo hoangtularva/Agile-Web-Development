@@ -41,6 +41,7 @@ en:
     orders: "Orders"
     products: "Products"
     users: "Users"
+    support: "Support"
     logout: "Logout"
 
   store:

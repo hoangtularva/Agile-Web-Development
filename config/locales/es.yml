@@ -10,6 +10,7 @@ es:
     orders: "orden"
     products: "producto"
     users: "usuario"
+    support: "support"
     logout: "cerrar sesión"
 
   store:
