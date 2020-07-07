@@ -5,7 +5,7 @@ class SupportRequestMailer < ApplicationMailer
   #
   #   en.support_request_mailer.respond.subject
   #
-  default from: "support@example.com"
+  default from: "Hoang Tu <hoangtukg295@gmail.com>"
   
   def respond(support_request)
     @support_request = support_request
