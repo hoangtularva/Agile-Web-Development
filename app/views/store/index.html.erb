@@ -1,3 +1,14 @@
+<%= search_form_for @q do |f| %>
+  <!-- Tìm kiếm với name like %abc% -->
+  <%= f.label :title_cont %>
+  <%= f.search_field :title_cont %>
+  <!--# Tìm kiếm nhiều field like %abc%
+  <%= f.label :title_or_description_cont %>
+  <%= f.search_field :title_or_description_cont %> -->
+  
+  <%= f.submit %>
+<% end %>
+
 <% if notice %>
     <aside id="notice"><%= notice %></aside>
 <% end %>
@@ -21,3 +32,6 @@
         <% end %>
     <% end %>
 </ul>
+<div class="paginate">
+  <%= paginate @products %>
+</div>

@@ -1,3 +1,14 @@
+<%= search_form_for @q do |f| %>
+  <!-- Tìm kiếm với name like %abc% -->
+  <%= f.label :name_cont %>
+  <%= f.search_field :name_cont %>
+  <!--# Tìm kiếm nhiều field like %abc%
+  <%= f.label :name_or_address_cont %>
+  <%= f.search_field :name_or_address_cont %> -->
+  
+  <%= f.submit %>
+<% end %>
+
 <h1>Orders</h1>
 
 <table>

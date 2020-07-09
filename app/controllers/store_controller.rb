@@ -7,7 +7,9 @@ class StoreController < ApplicationController
     if params[:set_locale]
       redirect_to store_index_url(locale: params[:set_locale])
     else
-      @products = Product.order(:title)
+      #@products = Product.all.page(params[:page]).per(5)
+      @q = Product.all.ransack params[:q]
+      @products = @q.result.page(params[:page]).per(5)
     end
   end
 end
