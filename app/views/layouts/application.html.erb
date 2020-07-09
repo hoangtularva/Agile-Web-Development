@@ -13,6 +13,8 @@
 
   <body>
     <header class="main">
+      <%= render "search/form" %>
+  
         <aside>
           <%= form_tag store_index_path, class: 'locale' do %>
             <%= select_tag 'set_locale', options_for_select(LANGUAGES, I18n.locale.to_s), onchange: 'this.form.submit()' %>
