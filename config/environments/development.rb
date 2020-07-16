@@ -18,8 +18,8 @@ Rails.application.configure do
       port: 587,
       domain: "localhost:3000",
       authentication: "plain",
-      user_name: "hoangtukg295@gmail.com",
-      password: "-Hoangtu295",
+      user_name: ENV["GMAIL_USERNAME"],
+      password: ENV["GMAIL_PASSWORD"],
       enable_starttls_auto: true
     }
   # Do not eager load code on boot.

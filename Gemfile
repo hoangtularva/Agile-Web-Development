@@ -59,3 +59,6 @@ gem "dotenv-rails"
 gem 'kaminari'       # gíup phân trang
 gem 'ransack'     #tạo form tìm kiếm
 gem 'bootstrap-kaminari-views' #giao diện đẹp cho phân trang
+
+#Bien moi truong cho gmail
+gem "figaro" #bundle exec figaro install
