@@ -5,3 +5,9 @@
 * Rails version 6.0.3.2
 
 * yarn install --check-files
+
+* rails db:migrate
+
+* bundle install
+
+* rails s
