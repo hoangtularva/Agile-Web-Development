@@ -11,3 +11,5 @@
 * bundle install
 
 * rails s
+
+* CrUser.create(name: 'dave', password: 'secret', password_confirmation: 'secret')
