@@ -1,24 +1,17 @@
-# README
+# Agile Web Development With Rails 6
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Ruby 2.7.1
 
-Things you may want to cover:
+* Rails version 6.0.3.2
 
-* Ruby version
+* yarn install --check-files
 
-* System dependencies
+* rails db:migrate
 
-* Configuration
+* bundle install
 
-* Database creation
+* rails s
 
-* Database initialization
+* Create user:
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- User.create(name: 'dave', password: 'secret', password_confirmation: 'secret')
