@@ -12,4 +12,6 @@
 
 * rails s
 
-* CrUser.create(name: 'dave', password: 'secret', password_confirmation: 'secret')
+* Create user:
+
+- User.create(name: 'dave', password: 'secret', password_confirmation: 'secret')
