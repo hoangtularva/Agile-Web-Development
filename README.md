@@ -16,4 +16,4 @@
 
 - User.create(name: 'hoangtu', password: 'hoangtu', password_confirmation: 'hoangtu')
 
-* Create data product: rails runner bin/create_dummy_prs.rb
+* Create data product: rails runner bin/create_dummy_products.rb
