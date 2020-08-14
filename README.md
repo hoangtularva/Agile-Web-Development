@@ -14,4 +14,4 @@
 
 * Create user:
 
-- User.create(name: 'hoangtu', password: 'hoangtu', password_confirmation: 'h')
+- User.create(name: 'hoangtu', password: 'hoangtu', password_confirmation: 'hoangtu')
