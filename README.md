@@ -12,6 +12,6 @@
 
 * rails s
 
-* Create user:
+* Create user: username: h
 
 - User.create(name: 'dave', password: 'secret', password_confirmation: 'secret')
